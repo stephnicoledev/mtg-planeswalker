@@ -14,6 +14,11 @@ let planeswalkers = {
     description:
       "Kaya, a.k.a. the Ghost-Assassin, is a Planeswalker with a growing reputation as an accomplished ghost hunter. She is also the nominal guildmaster of the Orzhov Syndicate on Ravnica.",
   },
+  sorin: {
+    name: "Sorin Markov",
+    description:
+      "Sorin Markov is a vampire planeswalker and a master of sangromancy, a dark corner of black mana specialization.",
+  },
   nicolbolas: {
     name: "Nicol Bolas",
     description:
@@ -33,6 +38,11 @@ let planeswalkers = {
     name: "Liliana Vess",
     description:
       "Liliana Vess is a human planeswalker from Dominaria and is both a master necromancer and a healer.",
+  },
+  vraska: {
+    name: "Vraska",
+    description:
+      "Vraska is a black and green-aligned gorgon planeswalker assassin from Ravnica. She was part of a mercenary organization known as 'the assassins of the Ochran.'",
   },
 };
 
@@ -82,6 +92,22 @@ function planeswalkerKaya() {
   document.querySelector("a").style.visibility = "visible";
   document.querySelector("a").href =
     "https://magic.wizards.com/en/story/planeswalkers/kaya-ghost-assassin";
+}
+
+// SORIN
+document.querySelector("#sorin").addEventListener("click", planeswalkerSorin);
+
+function planeswalkerSorin() {
+  document.querySelector("h1").innerText = planeswalkers.sorin.name;
+
+  const image = document.querySelector(".child-2 img");
+  image.src = "./images/sorin-planeswalker.png";
+
+  document.querySelector("p").innerText = planeswalkers.sorin.description;
+
+  document.querySelector("a").style.visibility = "visible";
+  document.querySelector("a").href =
+    "https://magic.wizards.com/en/story/planeswalkers/sorin-markov";
 }
 
 // NICOL BOLAS
@@ -152,4 +178,20 @@ function planeswalkerLiliana() {
   document.querySelector("a").style.visibility = "visible";
   document.querySelector("a").href =
     "https://magic.wizards.com/en/story/planeswalkers/liliana-vess";
+}
+
+// VRASKA
+document.querySelector("#vraska").addEventListener("click", planeswalkerVraska);
+
+function planeswalkerVraska() {
+  document.querySelector("h1").innerText = planeswalkers.vraska.name;
+
+  const image = document.querySelector(".child-2 img");
+  image.src = "./images/vraska-planeswalker.png";
+
+  document.querySelector("p").innerText = planeswalkers.vraska.description;
+
+  document.querySelector("a").style.visibility = "visible";
+  document.querySelector("a").href =
+    "https://magic.wizards.com/en/story/planeswalkers/vraska";
 }
