@@ -29,6 +29,11 @@ let planeswalkers = {
     description:
       "Ajani Goldmane is a leonin planeswalker from Naya, Alara. He is part of the Gatewatch. Ajani is a large one-eyed albino cat warrior, torn between his leonin ferocity and his sense of justice.",
   },
+  liliana: {
+    name: "Liliana Vess",
+    description:
+      "Liliana Vess is a human planeswalker from Dominaria and is both a master necromancer and a healer.",
+  },
 };
 
 // JACE
@@ -129,4 +134,22 @@ function planeswalkerAjani() {
   document.querySelector("a").style.visibility = "visible";
   document.querySelector("a").href =
     "https://magic.wizards.com/en/story/planeswalkers/ajani-goldmane";
+}
+
+// LILIANA
+document
+  .querySelector("#liliana")
+  .addEventListener("click", planeswalkerLiliana);
+
+function planeswalkerLiliana() {
+  document.querySelector("h1").innerText = planeswalkers.liliana.name;
+
+  const image = document.querySelector(".child-2 img");
+  image.src = "./images/liliana-planeswalker.png";
+
+  document.querySelector("p").innerText = planeswalkers.liliana.description;
+
+  document.querySelector("a").style.visibility = "visible";
+  document.querySelector("a").href =
+    "https://magic.wizards.com/en/story/planeswalkers/liliana-vess";
 }
