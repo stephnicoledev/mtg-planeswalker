@@ -24,6 +24,11 @@ let planeswalkers = {
     description:
       "Chandra Nalaar is a human planeswalker from Kaladesh. She is a member of the Gatewatch.",
   },
+  ajani: {
+    name: "Ajani Goldmane",
+    description:
+      "Ajani Goldmane is a leonin planeswalker from Naya, Alara. He is part of the Gatewatch. Ajani is a large one-eyed albino cat warrior, torn between his leonin ferocity and his sense of justice.",
+  },
 };
 
 // JACE
@@ -108,4 +113,20 @@ function planeswalkerChandra() {
   document.querySelector("a").style.visibility = "visible";
   document.querySelector("a").href =
     "https://magic.wizards.com/en/story/planeswalkers/chandra-nalaar";
+}
+
+// AJANI
+document.querySelector("#ajani").addEventListener("click", planeswalkerAjani);
+
+function planeswalkerAjani() {
+  document.querySelector("h1").innerText = planeswalkers.ajani.name;
+
+  const image = document.querySelector(".child-2 img");
+  image.src = "./images/ajani-planeswalker.png";
+
+  document.querySelector("p").innerText = planeswalkers.ajani.description;
+
+  document.querySelector("a").style.visibility = "visible";
+  document.querySelector("a").href =
+    "https://magic.wizards.com/en/story/planeswalkers/ajani-goldmane";
 }
