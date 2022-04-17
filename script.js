@@ -19,6 +19,11 @@ let planeswalkers = {
     description:
       "Nicol Bolas is the youngest and most infamous of the seven Elder Dragons that survived the Elder Dragon War. He was also known as the Forever Serpent, the Horned One, as well as the Second Sun and God-Pharaoh of Amonkhet.",
   },
+  chandra: {
+    name: "Chandra Nalaar",
+    description:
+      "Chandra Nalaar is a human planeswalker from Kaladesh. She is a member of the Gatewatch.",
+  },
 };
 
 // JACE
@@ -85,4 +90,22 @@ function planeswalkerNicolBolas() {
   document.querySelector("a").style.visibility = "visible";
   document.querySelector("a").href =
     "https://magic.wizards.com/en/story/planeswalkers/nicol-bolas";
+}
+
+// CHANDRA
+document
+  .querySelector("#chandra")
+  .addEventListener("click", planeswalkerChandra);
+
+function planeswalkerChandra() {
+  document.querySelector("h1").innerText = planeswalkers.chandra.name;
+
+  const image = document.querySelector(".child-2 img");
+  image.src = "./images/chandra-planeswalker.png";
+
+  document.querySelector("p").innerText = planeswalkers.chandra.description;
+
+  document.querySelector("a").style.visibility = "visible";
+  document.querySelector("a").href =
+    "https://magic.wizards.com/en/story/planeswalkers/chandra-nalaar";
 }
