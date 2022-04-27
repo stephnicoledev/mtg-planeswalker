@@ -14,6 +14,11 @@ let planeswalkers = {
     description:
       "Kaya, a.k.a. the Ghost-Assassin, is a Planeswalker with a growing reputation as an accomplished ghost hunter. She is also the nominal guildmaster of the Orzhov Syndicate on Ravnica.",
   },
+  nicolbolas: {
+    name: "Nicol Bolas",
+    description:
+      "Nicol Bolas is the youngest and most infamous of the seven Elder Dragons that survived the Elder Dragon War. He was also known as the Forever Serpent, the Horned One, as well as the Second Sun and God-Pharaoh of Amonkhet.",
+  },
 };
 
 // JACE
@@ -62,4 +67,22 @@ function planeswalkerKaya() {
   document.querySelector("a").style.visibility = "visible";
   document.querySelector("a").href =
     "https://magic.wizards.com/en/story/planeswalkers/kaya-ghost-assassin";
+}
+
+// NICOL BOLAS
+document
+  .querySelector("#nicol-bolas")
+  .addEventListener("click", planeswalkerNicolBolas);
+
+function planeswalkerNicolBolas() {
+  document.querySelector("h1").innerText = planeswalkers.nicolbolas.name;
+
+  const image = document.querySelector(".child-2 img");
+  image.src = "./images/nicol-bolas-planeswalker.png";
+
+  document.querySelector("p").innerText = planeswalkers.nicolbolas.description;
+
+  document.querySelector("a").style.visibility = "visible";
+  document.querySelector("a").href =
+    "https://magic.wizards.com/en/story/planeswalkers/nicol-bolas";
 }
