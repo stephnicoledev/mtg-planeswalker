@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
 /* universal styles */
 * {
   box-sizing: border-box;
@@ -21,6 +23,48 @@
 base styles
 /*******************************************/
 
+html {
+  background-image: url("http://media.wizards.com/images/magic/daily/wallpapers/Izzet_Wallpaper_2560x1440.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  font-family: "Roboto", sans-serif;
+}
 /*******************************************
 layout
 /*******************************************/
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 150px 0 50px 0;
+}
+.logo img {
+  max-height: 250px;
+}
+
+button {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 80px;
+  background-color: rgba(66, 28, 3, 0.91);
+  color: white;
+  border-radius: 10px;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.91);
+  border: 2px solid rgba(130, 79, 45, 0.73);
+}
+
+@media (min-width: 256px) {
+  .logo-img {
+    height: 150px;
+  }
+  button {
+    font-size: 1rem;
+  }
+}
