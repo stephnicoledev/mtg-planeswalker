@@ -66,7 +66,6 @@ h2 {
 }
 
 .child-2 {
-  background-color: limegreen;
   text-align: center;
   width: 50%;
 }
@@ -80,6 +79,15 @@ h2 {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+}
+
+.child-2 img {
+  margin-top: 10px;
+  max-height: 365px;
+}
+
+.child-2 a {
+  visibility: hidden;
 }
 
 /* add a hover effect to make it a darker shade */
