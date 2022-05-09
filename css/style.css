@@ -60,6 +60,10 @@ button:hover {
   border: 2px solid rgba(130, 79, 45, 0.73);
 }
 
+a {
+  color: white;
+}
+
 @media (min-width: 256px) {
   .logo-img {
     height: 150px;
