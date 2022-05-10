@@ -45,13 +45,16 @@ html {
 /*******************************************/
 
 .myGallery {
+  border: 8px solid black;
+  width: 50%;
   display: grid;
-  grid-template-columns: repeat(3, 16%);
-  grid-template-rows: repeat(3, 16%);
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  margin: 75px 0 75px 30px;
 }
 
 .myGallery img {
   border: 1px solid #ccc;
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-  max-width: 100%;
+  width: 100%;
 }
