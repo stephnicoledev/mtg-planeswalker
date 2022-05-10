@@ -15,10 +15,21 @@
 /*******************************************/
 
 html {
-  background-image: url("../images/Pin-by-Osler-Tan-on-Art-Land-art-Art-Magic-the-gathering.jpeg");
+  background-image: url("../images/scroll-background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+}
+
+body {
+  border: 6px solid red;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+h2 {
+  text-align: center;
 }
 
 /*******************************************
@@ -35,26 +46,54 @@ html {
   max-height: 75px;
 }
 
-/* grid */
-/*
-  The grid itself needs only 4 CSS declarations:
-*/
-
 /*******************************************
 -----------------GALLERY--------------------
 /*******************************************/
 
-.myGallery {
-  border: 8px solid black;
+.intro {
+  background-color: orange;
+  display: flex;
+  width: 90%;
+  margin: 30px auto;
+}
+.parent {
+  background-color: pink;
+  border: 3px solid black;
+  display: flex;
+  width: 90%;
+  margin: 75px auto;
+}
+.child-1 {
+  background-color: lightblue;
+  border: 6px solid lightblue;
+  display: flex;
+  flex-wrap: wrap;
   width: 50%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  margin: 75px 0 75px 30px;
 }
 
-.myGallery img {
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-  width: 100%;
+.child-2 {
+  background-color: limegreen;
+  border: 6px solid yellow;
+  width: 50%;
+}
+
+.item {
+  width: 150px;
+  height: 150px;
+  border-radius: 6px;
+  background-color: lightgray;
+  border: 1px solid black;
+  margin: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.item:hover {
+  background-size: 105%;
 }
