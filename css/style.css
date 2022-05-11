@@ -1,4 +1,10 @@
 /*******************************************
+--------------FONT IMPORT-------------------
+/*******************************************/
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&family=Rye&display=swap");
+
+/*******************************************
 -------------------RESET--------------------
 /*******************************************/
 
@@ -19,12 +25,44 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
+  font-size: 16px;
 }
 
 body {
   display: flex;
   flex-direction: column;
   width: 100%;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 1.95rem;
+}
+
+h1,
+h2 {
+  font-family: "Rye", cursive;
+}
+
+p,
+a {
+  font-family: "Open Sans", sans-serif;
+}
+
+button {
+  background-color: rgba(37, 37, 37, 0.919);
+  border-radius: 15px;
+  padding: 1rem 1.5rem;
+}
+
+button a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 0.85rem;
+  margin-top: 25px;
 }
 
 /*******************************************
@@ -46,7 +84,7 @@ body {
 /*******************************************/
 
 h2 {
-  margin: 50px 0 20px 60px;
+  margin: 50px 0 20px 120px;
 }
 
 /*******************************************
@@ -62,12 +100,12 @@ h2 {
 .child-1 {
   display: flex;
   flex-wrap: wrap;
-  width: 50%;
+  width: 40%;
 }
 
 .child-2 {
   text-align: center;
-  width: 50%;
+  width: 40%;
 }
 
 .item {
@@ -82,11 +120,11 @@ h2 {
 }
 
 .child-2 img {
-  margin-top: 10px;
+  margin: 10px 0;
   max-height: 365px;
 }
 
-.child-2 a {
+.child-2 button {
   visibility: hidden;
 }
 

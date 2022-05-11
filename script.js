@@ -57,7 +57,7 @@ function planeswalkerJace() {
 
   document.querySelector("p").innerText = planeswalkers.jace.description;
 
-  document.querySelector("a").style.visibility = "visible";
+  document.querySelector("button").style.visibility = "visible";
   document.querySelector("a").href =
     "https://magic.wizards.com/en/story/planeswalkers/jace-beleren";
 }
@@ -73,7 +73,7 @@ function planeswalkerGarruk() {
 
   document.querySelector("p").innerText = planeswalkers.garruk.description;
 
-  document.querySelector("a").style.visibility = "visible";
+  document.querySelector("button").style.visibility = "visible";
   document.querySelector("a").href =
     "https://magic.wizards.com/en/story/planeswalkers/garruk-wildspeaker";
 }
@@ -89,7 +89,7 @@ function planeswalkerKaya() {
 
   document.querySelector("p").innerText = planeswalkers.kaya.description;
 
-  document.querySelector("a").style.visibility = "visible";
+  document.querySelector("button").style.visibility = "visible";
   document.querySelector("a").href =
     "https://magic.wizards.com/en/story/planeswalkers/kaya-ghost-assassin";
 }
@@ -105,7 +105,7 @@ function planeswalkerSorin() {
 
   document.querySelector("p").innerText = planeswalkers.sorin.description;
 
-  document.querySelector("a").style.visibility = "visible";
+  document.querySelector("button").style.visibility = "visible";
   document.querySelector("a").href =
     "https://magic.wizards.com/en/story/planeswalkers/sorin-markov";
 }
@@ -123,7 +123,7 @@ function planeswalkerNicolBolas() {
 
   document.querySelector("p").innerText = planeswalkers.nicolbolas.description;
 
-  document.querySelector("a").style.visibility = "visible";
+  document.querySelector("button").style.visibility = "visible";
   document.querySelector("a").href =
     "https://magic.wizards.com/en/story/planeswalkers/nicol-bolas";
 }
@@ -141,7 +141,7 @@ function planeswalkerChandra() {
 
   document.querySelector("p").innerText = planeswalkers.chandra.description;
 
-  document.querySelector("a").style.visibility = "visible";
+  document.querySelector("button").style.visibility = "visible";
   document.querySelector("a").href =
     "https://magic.wizards.com/en/story/planeswalkers/chandra-nalaar";
 }
@@ -157,7 +157,7 @@ function planeswalkerAjani() {
 
   document.querySelector("p").innerText = planeswalkers.ajani.description;
 
-  document.querySelector("a").style.visibility = "visible";
+  document.querySelector("button").style.visibility = "visible";
   document.querySelector("a").href =
     "https://magic.wizards.com/en/story/planeswalkers/ajani-goldmane";
 }
@@ -175,7 +175,7 @@ function planeswalkerLiliana() {
 
   document.querySelector("p").innerText = planeswalkers.liliana.description;
 
-  document.querySelector("a").style.visibility = "visible";
+  document.querySelector("button").style.visibility = "visible";
   document.querySelector("a").href =
     "https://magic.wizards.com/en/story/planeswalkers/liliana-vess";
 }
@@ -191,7 +191,7 @@ function planeswalkerVraska() {
 
   document.querySelector("p").innerText = planeswalkers.vraska.description;
 
-  document.querySelector("a").style.visibility = "visible";
+  document.querySelector("button").style.visibility = "visible";
   document.querySelector("a").href =
     "https://magic.wizards.com/en/story/planeswalkers/vraska";
 }
