@@ -21,10 +21,10 @@
 /*******************************************/
 
 html {
-  background-image: url("../images/scroll-background.jpeg");
+  background-image: url("../assets/scroll-background.jpeg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  font-family: "Open Sans", sans-serif;
   font-size: 16px;
 }
 
@@ -34,35 +34,32 @@ body {
   width: 100%;
 }
 
-h1 {
-  font-size: 2.2rem;
-}
-
-h2 {
-  font-size: 1.95rem;
-}
-
 h1,
 h2 {
   font-family: "Rye", cursive;
+  font-size: 2.2rem;
 }
 
-p,
-a {
-  font-family: "Open Sans", sans-serif;
+h1 {
+  margin: 0 0 5px 0;
+  padding: 0 0 5px 0;
+}
+
+h2 {
+  margin: 75px 0 0 30px;
+  text-align: left;
 }
 
 button {
   background-color: rgba(37, 37, 37, 0.919);
   border-radius: 15px;
-  padding: 1rem 1.5rem;
+  padding: 0.75rem 1.5rem;
 }
 
 button a {
   color: #fff;
   text-decoration: none;
-  font-size: 0.85rem;
-  margin-top: 25px;
+  font-size: 0.75rem;
 }
 
 /*******************************************
@@ -72,40 +69,33 @@ button a {
 .logo {
   position: absolute;
   top: 15px;
-  right: 15px;
+  right: 47%;
 }
 
 .logo img {
-  max-height: 50px;
+  max-height: 55px;
 }
 
-/*******************************************
------------------INTRO--------------------
-/*******************************************/
-
-h2 {
-  margin: 50px 0 20px 120px;
+@media (max-width: 360px) {
+  .logo {
+    right: 76%;
+  }
 }
 
 /*******************************************
 -----------------GALLERY--------------------
 /*******************************************/
 
-.parent {
+.gallery {
   display: flex;
-  width: 90%;
-  margin: 0 auto 120px auto;
+  width: 100%;
 }
 
-.child-1 {
+.planeswalker-img {
   display: flex;
   flex-wrap: wrap;
-  width: 40%;
-}
-
-.child-2 {
-  text-align: center;
-  width: 40%;
+  width: 50%;
+  margin: 40px 0 55px 30px;
 }
 
 .item {
@@ -117,15 +107,25 @@ h2 {
   align-items: center;
   justify-content: center;
   cursor: pointer;
+  margin: 0.1em;
 }
 
-.child-2 img {
-  margin: 10px 0;
-  max-height: 365px;
+.planeswalker-info {
+  text-align: center;
+  width: 50%;
+  margin: 40px 30px 55px 30px;
 }
 
-.child-2 button {
+.avatar {
+  max-height: 355px;
+  padding: 0.75rem;
+}
+
+.mana {
+  display: inline;
+  max-height: 55px;
+}
+
+.planeswalker-info button {
   visibility: hidden;
 }
-
-/* add a hover effect to make it a darker shade */
