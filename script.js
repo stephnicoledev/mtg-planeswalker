@@ -19,10 +19,11 @@ let planeswalkers = {
   kaya: {
     name: "Kaya, Ghost Assassin",
     description:
-      "Kaya, a.k.a. the Ghost-Assassin, is a Planeswalker with a growing reputation as an accomplished ghost hunter. She is also the nominal guildmaster of the Orzhov Syndicate on Ravnica.",
+      "Kaya, a.k.a. the Ghost-Assassin, is a Planeswalker with a growing reputation as an accomplished ghost hunter.",
     avatar: "./assets/kaya-planeswalker.png",
     background:
       "https://magic.wizards.com/en/story/planeswalkers/kaya-ghost-assassin",
+    mana: "./assets/mana-orzhov.png",
   },
   sorin: {
     name: "Sorin Markov",
@@ -30,13 +31,15 @@ let planeswalkers = {
       "Sorin Markov is a vampire planeswalker and a master of sangromancy, a dark corner of black mana specialization.",
     avatar: "./assets/sorin-planeswalker.png",
     background: "https://magic.wizards.com/en/story/planeswalkers/sorin-markov",
+    mana: "./assets/mana-orzhov.png",
   },
   nicolbolas: {
     name: "Nicol Bolas",
     description:
-      "Nicol Bolas is the youngest and most infamous of the seven Elder Dragons that survived the Elder Dragon War. He was also known as the Forever Serpent, the Horned One, as well as the Second Sun and God-Pharaoh of Amonkhet.",
+      "Nicol Bolas is the youngest and most infamous of the seven Elder Dragons that survived the Elder Dragon War.",
     avatar: "./assets/nicol-bolas-planeswalker.png",
     background: "https://magic.wizards.com/en/story/planeswalkers/nicol-bolas",
+    mana: "./assets/mana-nicolbolas.png",
   },
   chandra: {
     name: "Chandra Nalaar",
@@ -70,6 +73,7 @@ let planeswalkers = {
       "Vraska is a black and green-aligned gorgon planeswalker assassin from Ravnica. She was part of a mercenary organization known as 'the assassins of the Ochran.'",
     avatar: "./assets/vraska-planeswalker.png",
     background: "https://magic.wizards.com/en/story/planeswalkers/vraska",
+    mana: "./assets/mana-golgari.png",
   },
 };
 
@@ -102,8 +106,8 @@ document.querySelector("#kaya").addEventListener("click", planeswalkerKaya);
 
 function planeswalkerKaya() {
   document.querySelector("h1").innerText = planeswalkers.kaya.name;
-  document.querySelector(".planeswalker-info img").src =
-    planeswalkers.kaya.avatar;
+  document.querySelector(".avatar").src = planeswalkers.kaya.avatar;
+  document.querySelector(".mana").src = planeswalkers.kaya.mana;
   document.querySelector("p").innerText = planeswalkers.kaya.description;
   document.querySelector("button").style.visibility = "visible";
   document.querySelector("a").href = planeswalkers.kaya.background;
@@ -114,8 +118,8 @@ document.querySelector("#sorin").addEventListener("click", planeswalkerSorin);
 
 function planeswalkerSorin() {
   document.querySelector("h1").innerText = planeswalkers.sorin.name;
-  document.querySelector(".planeswalker-info img").src =
-    planeswalkers.sorin.avatar;
+  document.querySelector(".avatar").src = planeswalkers.sorin.avatar;
+  document.querySelector(".mana").src = planeswalkers.sorin.mana;
   document.querySelector("p").innerText = planeswalkers.sorin.description;
   document.querySelector("button").style.visibility = "visible";
   document.querySelector("a").href = planeswalkers.sorin.background;
@@ -128,8 +132,8 @@ document
 
 function planeswalkerNicolBolas() {
   document.querySelector("h1").innerText = planeswalkers.nicolbolas.name;
-  document.querySelector(".planeswalker-info img").src =
-    planeswalkers.nicolbolas.avatar;
+  document.querySelector(".avatar").src = planeswalkers.nicolbolas.avatar;
+  document.querySelector(".mana").src = planeswalkers.nicolbolas.mana;
   document.querySelector("p").innerText = planeswalkers.nicolbolas.description;
   document.querySelector("button").style.visibility = "visible";
   document.querySelector("a").href = planeswalkers.nicolbolas.background;
@@ -180,8 +184,8 @@ document.querySelector("#vraska").addEventListener("click", planeswalkerVraska);
 
 function planeswalkerVraska() {
   document.querySelector("h1").innerText = planeswalkers.vraska.name;
-  document.querySelector(".planeswalker-info img").src =
-    planeswalkers.vraska.avatar;
+  document.querySelector(".avatar").src = planeswalkers.vraska.avatar;
+  document.querySelector(".mana").src = planeswalkers.vraska.mana;
   document.querySelector("p").innerText = planeswalkers.vraska.description;
   document.querySelector("button").style.visibility = "visible";
   document.querySelector("a").href = planeswalkers.vraska.background;
