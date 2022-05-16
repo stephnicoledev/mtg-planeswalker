@@ -6,7 +6,7 @@
   <br />
   <br />
   
- <img src="Users/stephaniestrano/Documents/Stephanie/projects/readme-images/avatar-selector.gif" />
+ <img src="./Users/stephaniestrano/Documents/Stephanie/projects/readme-images/avatar-selector.gif" />
 
   <h2 align="center">Magic: The Gathering - Select Your Planeswalker</h2>
 
