@@ -3,16 +3,13 @@
 ![GitHub Follow](https://img.shields.io/github/followers/stephnicoledev?style=social)
 [![Twitter Follow](https://img.shields.io/twitter/follow/darkroast_dev?style=social)](https://twitter.com/intent/follow?screen_name=darkroast_dev)
 
-  <br />
-  <br />
-  
- <img src="file:///Users/stephaniestrano/Documents/Stephanie/projects/readme-images/avatar-selector.gif" />
-
   <h2 align="center">Magic: The Gathering - Select Your Planeswalker</h2>
 
 This is a passion project that enables the user to select a planeswalker to aid them in a game of Magic: The Gathering.
+  <br/>
+  This project is for learning purposes only.
 
-<a href="https://stephnicoledev.github.io/mtg-planeswalker/"><strong>Live</strong></a>
+<a href="https://stephnicoledev.github.io/mtg-planeswalker/"><strong>Live Site</strong></a>
 
 </div>
 
