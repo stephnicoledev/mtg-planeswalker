@@ -1,17 +1,13 @@
 <div align="center">
 
-![GitHub Follow](https://img.shields.io/github/followers/stephnicoledev?style=social)
-[![Twitter Follow](https://img.shields.io/twitter/follow/darkroast_dev?style=social)](https://twitter.com/intent/follow?screen_name=darkroast_dev)
-
-  <h2 align="center">Magic: The Gathering - Select Your Planeswalker</h2>
-
-This is a passion project that enables the user to select a planeswalker to aid them in a game of Magic: The Gathering.
-  <br/>
+<h2 align="center">Magic: The Gathering - Select Your Planeswalker</h2>
+<a href="https://stephnicoledev.github.io/mtg-planeswalker/"><img src="assets/MTG_Preview.png" width="500"><a/>
+   <br/>
+This is a passion project that enables the user to select a famous planeswalker from Magic: The Gathering and learn more about them.
+ 
   This project is for learning purposes only.
 
-<a href="https://stephnicoledev.github.io/mtg-planeswalker/"><strong>Live Site</strong></a>
-
-</div>
+<a href="https://stephnicoledev.github.io/mtg-planeswalker/"><strong>Live Site</strong></a></div>
 
 ## How It's Made:
 
